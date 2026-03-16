@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Configuration
-database_url = os.environ.get('postgresql://shopkart_product_database_user:sNAddlskRxHaNJv3saNBnr2GwHq5HVSU@dpg-d6s4hfnpm1nc73dub55g-a/shopkart_product_database')
+database_url = os.environ.get('DATABASE_URL')
 if database_url:
     app.config['SQLALCHEMY_DATABASE_URI'] = database_url
 else:
