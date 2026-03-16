@@ -17,7 +17,7 @@ app.config['JWT_SECRET_KEY'] = '0s1h2o2s3h4o5s6h7o8s9h0o1s2h3o4s5h6o7s8h9o0s1h2o
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=30)
 
 # Initialize extensions
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}}, supports_credentials=True)
+CORS(app, resources={r"/api/*": {"origins": ["http://localhost:3000", "https://shopkart-123.netlify.app"]}}, supports_credentials=True)
 jwt = JWTManager(app)
 
 # Import database
