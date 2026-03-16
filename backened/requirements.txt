@@ -3,5 +3,5 @@ Flask-SQLAlchemy==3.0.5
 Flask-CORS==4.0.0
 Flask-JWT-Extended==4.4.4
 Werkzeug==2.3.6
-psycopg[c]==3.1.18
+psycopg2-binary==2.9.9
 gunicorn==21.2.0
